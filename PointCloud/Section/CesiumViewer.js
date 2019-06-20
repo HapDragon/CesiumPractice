@@ -22,7 +22,7 @@ class CesiumViewer {
         this.instance = null;
         this.viewer = null;
         this.viewerlist=[];
-        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyNThiOTQ5Yi04OTkzLTQzZWUtOTJlMC01OTQxNGU0YzMxZWIiLCJpZCI6NzY2OCwic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU1NDE2OTI3Nn0.5Q_q6jBgYzvO_EKF8V8ypFOkwEc92rLSb9weyeTKoBg';
+        Cesium.Ion.defaultAccessToken = '此处自己申请';
     }
 
     //注册界面id 在vue中调用
@@ -183,35 +183,6 @@ class CesiumViewer {
 
     //加载天地图影像
     AddTdtLayer() {
-        //全球矢量地图
-        // this.viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
-        //     url: "http://t0.tianditu.com/vec_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=vec&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk="+globalconfig.configdata.Scene.Tdt.key,
-        //     layer: "tdtVecBasicLayer",
-        //     style: "default",
-        //     format: "image/jpeg",
-        //     tileMatrixSetID: "GoogleMapsCompatible",
-        //     show: false
-        // }));
-
-        //全球矢量中文注记
-        // this.viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
-        //     url: "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default.jpg",
-        //     layer: "tdtAnnoLayer",
-        //     style: "default",
-        //     format: "image/jpeg",
-        //     tileMatrixSetID: "GoogleMapsCompatible"
-        // }));
-
-        // //全球影像地图
-        // this.viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
-        //     url: "http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk="+globalconfig.configdata.modules.Scene.Tdt.key,
-        //     layer: "tdtImgBasicLayer",
-        //     style: "default",
-        //     format: "image/jpeg",
-        //     tileMatrixSetID: "GoogleMapsCompatible",
-        //     show: false
-        // }));
-
         //全球影像中文注记
         this.viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
             url: globalconfig.configdata.modules.Scene.Tdt.labelurl + globalconfig.configdata.modules.Scene.Tdt.key,
