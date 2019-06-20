@@ -1,0 +1,95 @@
+/*点云分类相关样式*/
+.pointsizeinput{
+    height:20px;
+}
+.pointsizeinput .el-input__inner{
+    background:transparent;
+    color:white;
+    border:none;
+    height:20px;
+    line-height: 20px;
+}
+
+.pointsizeinput .el-icon-arrow-down:before{
+    content: "\25BC";
+}
+.pointsizeinput .el-icon-arrow-up:before{
+    content: "\25B2";
+}
+
+
+.pointsizeinput.el-input-number.is-controls-right .el-input-number__decrease, .pointsizeinput.el-input-number.is-controls-right .el-input-number__increase{
+    width:20px;
+    background:transparent;
+    border:none;
+    color:white;
+    line-height: 10px;
+    -webkit-transform: scale(1.25,0.55);
+    right:0px;
+}
+.pointsizeinput.el-input-number.is-controls-right .el-input-number__decrease{
+    bottom:-1px;
+}
+.pointsizeinput.el-input-number.is-controls-right .el-input-number__increase{
+    top:-1px;
+}
+.pointsizeinput.el-input-number .el-input{
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    top:-1.5px;
+}
+.pointsizeinput.el-input-number.is-controls-right .el-input__inner {
+    padding-left: 6px;
+    padding-right: 20px;
+}
+
+
+.pointclassificationtypeselect .el-input--suffix .el-input__inner{
+    background: transparent;
+    color: white;
+    top: -2px;
+    left: 0px;
+    position: relative;
+    border: none;
+    height: 20px;
+}
+.pointclassificationtypeselect{
+    height:20px;
+}
+.pointclassificationtypeselect .el-input__suffix{
+    right:2px;
+}
+.pointclassificationtypeselect .el-input--suffix .el-input__inner{
+    padding: 0px 20px 0px 4px;
+    text-align: center;
+}
+.pointclassificationtypeselect .el-icon-arrow-up:before{
+    content: "\25B2";
+}
+.pointclassificationtypeselect.el-select .el-input .el-select__caret{
+    color:white;
+}
+.pointclassificationtypeselect .el-input__icon{
+    line-height: 20px;
+    width:16px;
+    top: -1.5px;
+    position: relative;
+}
+
+.evo-cp-wrap{
+    float:left;
+    width:50px;
+}
+.evo-pop{
+    width:210px;
+}
+
+/*点云主菜单相关样式*/
+#PointCloudMenu{
+    left: -187px;
+    top:100px;
+    height:148px;
+    width:342px;
+    padding:0px;
+}

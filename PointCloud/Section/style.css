@@ -1,0 +1,414 @@
+/*所有通用class样式*/
+.height100percent{
+    height:100%;
+}
+.height99percent{
+    height:99%;
+}
+.height97percent{
+    height:97%;
+}
+.height90percent{
+    height:90%;
+}
+.height80percent{
+    height:80%;
+}
+.height20percent{
+    height:20%;
+}
+.height20px{
+    height:20px;
+}
+.height30px{
+    height:30px;
+}
+.height24px{
+    height:24px;
+}
+.width100percent{
+    width:100%;
+}
+.position-absolute{
+    position:absolute;
+}
+.position-relative{
+    position:relative;
+}
+.position-fixed{
+    position:fixed;
+}
+.background100100{
+    background:100% 100%
+}
+/*margin -top*/
+.margin-top5px{
+    margin-top:5px;
+}
+.margin-top10px{
+    margin-top:10px;
+}
+.margin-top8px{
+    margin-top: 8px;
+}
+.margin-top7px{
+    margin-top:7px;
+}
+.margin-top6px{
+    margin-top: 6px;
+}
+.margin-top4px{
+    margin-top: 4px;
+}
+.margin-top12px{
+    margin-top: 12px;
+}
+.margin-top22px{
+    margin-top: 22px;
+}
+.margin-top25px{
+    margin-top: 25px;
+}
+.margin-top20px{
+    margin-top:20px;
+}
+.margin-top60px{
+    margin-top:60px;
+}
+.margin-top100px{
+    margin-top: 100px;
+}
+.margin-topup3px{
+    margin-top:-3px;
+}
+/*margin left*/
+.margin-left8px{
+    margin-left:8px;
+}
+.margin-left12px{
+    margin-left:12px;
+}
+.margin-left14px{
+    margin-left:14px;
+}
+.margin-left20px{
+    margin-left: 20px;
+}
+.margin-left22px{
+    margin-left:22px;
+}
+.margin-left30px{
+    margin-left:30px;
+}
+.margin-left35px{
+    margin-left:35px;
+}
+/*margin right*/
+.margin-right12px{
+    margin-right: 12px;
+}
+.margin-right8px{
+    margin-right: 8px;
+}
+.margin-right30px{
+    margin-right:30px;
+}
+.display-inlineblock{
+    display: inline-block;
+}
+.display-block{
+    display:block;
+}
+.display-grid{
+    display: grid;
+}
+.color-white{
+    color:white;
+}
+.color-yellow{
+    color:yellow;
+}
+.color-ffcc00{
+    color:#ffcc00;
+}
+.color-6afedb{
+    color:#6afedb;
+}
+.bk-cb7b16{
+    background:#cb7b16;
+}
+.bk-13213ccc{
+    background:#13213ccc;
+}
+.bk-122134b2{
+    background:#122134b2;
+}
+.bk-6afedb{
+    background:#6afedb;
+}
+.bk-3fc4ad{
+    background:#3fc4ad;
+}
+.bk-174e62{
+    background:#174e62;
+}
+.verticlealign-bottom{
+    vertical-align: bottom;
+}
+.verticlealign-middle{
+    vertical-align: middle;
+}
+.textalign-center{
+    text-align: center;
+}
+.textalign-left{
+    text-align: left;
+}
+.textalign-right{
+    text-align: right;
+}
+.TextDecoration-underline{
+    text-decoration: underline;
+}
+.TextDecoration-blink{
+    text-decoration:blink;
+}
+.FontSize-12px{
+    font-size: 12px;
+}
+.FontSize-13px{
+    font-size: 13px;
+}
+.FontSize-14px{
+    font-size: 14px;
+}
+.FontSize-15px{
+    font-size: 15px;
+}
+.FontSize-16px{
+    font-size: 16px;
+}
+.FontSize-18px{
+    font-size:18px;
+}
+.FontWeight-Bold{
+    font-weight:bold;
+}
+.FontWeight-Normal{
+    font-weight:normal;
+}
+.TextDecoration-underline{
+    text-decoration: underline;
+}
+.TextDecoration-blink{
+    text-decoration:blink;
+}
+
+.overflow_x-hidden{
+    overflow-x: hidden;
+}
+
+.horizon-center{
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+.whiteborder1PX{
+    border:1px solid white;
+}
+
+.border-radius6PX{
+    border-radius:6px;
+}
+.border-radius4PX{
+    border-radius:4px;
+}
+.bordernone{
+    border:none;
+}
+
+.transparentBk{
+    background:transparent;
+}
+.lineheight-21px{
+    line-height: 21px;
+}
+.lineheight-20px{
+    line-height:20px;
+}
+
+
+
+/*自定义竖滚动栏样式*/
+.selfdefine_scrollheight{
+    overflow-y: hidden;
+}
+.selfdefine_scrollheight:hover{
+    overflow-y:auto;
+}
+.selfdefine_scrollheight::-webkit-scrollbar{
+    background: #2e659299;
+    width:10px;
+}
+.selfdefine_scrollheight::-webkit-scrollbar-thumb{
+    background:#19988b;
+    border-radius: 6px;
+}
+
+/*自定义checkbox样式*/
+.ListCheckBox {
+    width:14px;
+    height:14px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    position: relative;
+
+}
+.ListCheckBox::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #122134;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.ListCheckBox:checked::before{
+    content: "\2713";
+    background: #030e5f;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    line-height:10px ;
+    /*width:100%;*/
+    border: 1px solid #ffcc00;
+    color:#ffcc00;
+    font-size: 10px;
+    font-weight: bold;
+}
+/*通用弹出窗样式*/
+.partcomwithborder{
+    background:
+        linear-gradient(to bottom,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) left top no-repeat,
+        linear-gradient(to right,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) left top no-repeat,
+        linear-gradient(to bottom,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) right top no-repeat,
+        linear-gradient(to left,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) right top no-repeat,
+        linear-gradient(to top,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) left bottom no-repeat,
+        linear-gradient(to right,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) left bottom no-repeat,
+        linear-gradient(to top,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) right bottom no-repeat,
+        linear-gradient(to left,#6afedb 0px,#6afedb 2px,transparent 3px,transparent 100%) right bottom no-repeat;
+    background-size: 18px 18px;
+    padding:4px;
+    width:200px;
+    height:200px;
+}
+.partcomwithbordersubcontent{
+    border:1px solid #5be3c8;
+    background:#07645e66;
+    width:100%;
+    height:100%;
+}
+
+
+.dialogcomwithbordersubcontent{
+    border:1px solid #6afedb7f;
+    padding-top: 42px;
+}
+.dialogcomwithborder-header{
+    height:42px;
+    background:linear-gradient(to right,#1221347f 0px,#122134ff 50%,#1221347f 100%);
+    margin-top: -42px;
+}
+.dialogcomwithbordertitle{
+    line-height: 42px;
+}
+.dialogcomwithborderclose{
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+.dialogcomwithborderheadhalo{
+    top:-8px;
+}
+.dialogcomwithborder-content{
+    height:100%;
+    background: linear-gradient(to right,#122134cc 0px,#122134ff 50%,#122134cc 100%);
+}
+.position-marginallauto{
+    position: relative;
+    margin: auto;
+}
+/*所有id唯一css样式*/
+#app{
+    width: 100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+
+/*所有menu中子功能模块的标签样式*/
+.MenuSubLabel{
+    line-height: 40px;
+    padding-left: 35px;
+}
+.MenuSubicon{
+    width:36px;
+    height:36px;
+}
+.MenuContainer{
+    border:none;
+    padding-top: 11px;
+    position:absolute;
+}
+
+.headhalo1{
+    top: -15px;
+    height: 2px;
+}
+/*分页控件样式*/
+.pagination {
+    overflow: hidden;
+    display: table;
+    margin: 0 auto;
+}
+.pagination li{
+    float: left;
+    height: 23px;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.pagination li:hover{
+    border:1px solid transparent;
+    background-color: transparent;
+}
+.pagination-li-active{
+    border:1px solid transparent;
+    background-color: transparent;
+}
+.pagination a{
+    padding:0px 5px;
+}
+.pagination-a{
+    color:white;
+}
+.pagination a:hover{
+    color:#34f5ff
+}
+.pagination-a-active{
+    color:#34f5ff
+}
+#pagination{
+    background: #122134;
+    width: 100%;
+    height: 38px;
+    opacity: 0.8;
+    font-size: 0.8vw;
+    padding-top: 9px;
+}
+
